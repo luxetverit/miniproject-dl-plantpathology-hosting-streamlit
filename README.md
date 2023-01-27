@@ -18,8 +18,8 @@ The dataset is available at [Kaggle](https://www.kaggle.com/competitions/plant-p
 [REMAD ME MODEL!](https://github.com/luxetverit/miniproject4/blob/main/README_model.md)
 
 ## 서비스
-### 주소 
 free to use
+
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
 
 ## 시연 영상
