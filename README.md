@@ -23,7 +23,7 @@ free to use
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
 
 ## 시연 영상
-수동 (직접 시현)
+수동 (직접 시연)
 
 ## 조원(이름순)
 ### 남정우
