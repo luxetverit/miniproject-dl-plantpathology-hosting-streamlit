@@ -13,6 +13,7 @@ The dataset is available at [Kaggle](https://www.kaggle.com/competitions/plant-p
 
 ## 특징
 훈련데이터 1821개
+
 ![piechart](./img/pitchart2.png)
 
 ## 설정
