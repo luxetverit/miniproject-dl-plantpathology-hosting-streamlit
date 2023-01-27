@@ -2,13 +2,14 @@
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
 
 ## Description
-사과나무 질병 예측은 Kaggle Plant Pathology 2020 데이터 세트를 사용
+식물 병리학 챌린지 Kaggle 경진대회 문제
+Plant Pathology 2020 데이터 세트를 사용
 
 ## 데이터
 The dataset is available at [Kaggle](https://www.kaggle.com/competitions/plant-pathology-2020-fgvc7).
 
 ## 목표
-apple tree 잎사귀의 질병 유무를 확인
+사과나무의 엽면병 분류
 
 ## 특징
 데이터 세트 특징~~~~~~~ 몇개인지
@@ -24,7 +25,7 @@ apple tree 잎사귀의 질병 유무를 확인
 
 ## 모델
 ### 모델
-이 모델은 ResNet50 신경망을 기본으로 합니다.
+ResNet50 
 
 ```python
 model = models.resnet50(pretrained = True)
