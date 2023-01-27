@@ -11,14 +11,22 @@ The dataset is available at [Kaggle](https://www.kaggle.com/competitions/plant-p
 이 프로젝트의 목표는 apple tree 잎사귀의 질병 유무를 확인하는 것입니다.
 
 ## 특징
-데이터 세트 특징~~~~~~~ 
+데이터 세트 특징~~~~~~~ 몇개인지
 시각화자료~~
+
+## 설정
+```
+이미지 변환 : 사이즈, 대비, 밝기, 수평, 수직, 회전, 정규화
+에폭 : 20회
+배치사이즈 : 4
+이미지 크기 : 224 x 224
+```
 
 ## 모델
 ### 모델
-ResNet50
+이 모델은 ResNet50 신경망을 기본으로 합니다.
 
-```
+```python
 model = models.resnet50(pretrained = True)
 for param in model.parameters():
     param.require_grad = False
@@ -31,33 +39,28 @@ model.fc = nn.Sequential(nn.Linear(num_ftrs,512,bias=True),
 
 model = model.to(device)
 ```
-### 이미지 변환
-```
-import albumentations as A
-from albumentations.pytorch import ToTensorV2
 
-transform_train = A.Compose([
-    A.Resize(224, 224),
-    A.RandomBrightnessContrast(brightness_limit=0.2, # 밝기 대비 조절
-                               contrast_limit=0.2, p=0.3),
-    A.VerticalFlip(p=0.2),
-    A.HorizontalFlip(p=0.5),
-    A.ShiftScaleRotate(
-        shift_limit=0.1,
-        scale_limit=0.2,
-        rotate_limit=30, p = 0.3),
-    A.OneOf([A.Emboss(p=1), # 양각화, 날카로움, 블러 효과
-             A.Sharpen(p=1),
-             A.Blur(p=1)], p=0.3),
-    A.PiecewiseAffine(p=0.3), # 어파인 변환
-    A.Normalize(), # 정규화 변환
-    ToTensorV2() # 텐서로 변환
-])
+### 손실함수 및 옵티마이저
+```python
+import torch.nn as nn
+from torch import optim
 
-transform_test = A.Compose([
-    A.Resize(224,224),
-    A.Normalize(),
-    ToTensorV2()
-])
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.AdamW(model.parameters(), lr=0.0001)
+scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', patience=5, factor=0.1, verbose=True)
 ```
-### 훈련
+
+### 평가
+```python
+from sklearn.metrics import roc_auc_score
+from sklearn.metrics import accuracy_score
+
+print('Epoch : {}/{}...'.format(epoch+1, epochs),
+                      'Train Loss : {:.3f} / '.format(train_loss/len(trainloader)),
+                      'Valid Loss : {:.3f} / '.format(valid_loss/len(validloader)),
+                      'Valid AUC : {:.3f} / '.format(valid_auc),
+                      'Valid Accuracy : {:.3f}'.format(valid_accuracy))
+```
+
+## 훈련 및 결과
+
