@@ -1,14 +1,14 @@
 # Plant Pathology
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/uzunb/house-prices-prediction-lgbm/main/1_%F0%9F%92%BB_Enter_Page.py)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
 
 ## Description
-사과나무 질병 예측은 Kaggle Plant Pathology 2020 데이터 세트를 사용하여 개발되었습니다.
+사과나무 질병 예측은 Kaggle Plant Pathology 2020 데이터 세트를 사용
 
 ## 데이터
 The dataset is available at [Kaggle](https://www.kaggle.com/competitions/plant-pathology-2020-fgvc7).
 
 ## 목표
-이 프로젝트의 목표는 apple tree 잎사귀의 질병 유무를 확인하는 것입니다.
+apple tree 잎사귀의 질병 유무를 확인
 
 ## 특징
 데이터 세트 특징~~~~~~~ 몇개인지
