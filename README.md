@@ -12,8 +12,8 @@ The dataset is available at [Kaggle](https://www.kaggle.com/competitions/plant-p
 사과나무의 엽면병 분류
 
 ## 특징
-데이터 세트 특징~~~~~~~ 몇개인지
-시각화자료~~
+훈련데이터 1821개
+![piechart](./img/pitchart2.png)
 
 ## 설정
 ```
@@ -64,4 +64,13 @@ print('Epoch : {}/{}...'.format(epoch+1, epochs),
 ```
 
 ## 훈련 및 결과
+### 손실
+![loss](./img/loss.png)
+
+### 스코어
+![score](./img/score.png)
+
+## 제출
+![submit](./img/result.png)
+
 
