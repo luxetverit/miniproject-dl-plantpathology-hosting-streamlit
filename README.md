@@ -15,7 +15,7 @@ The dataset is available at [Kaggle](https://www.kaggle.com/competitions/plant-p
 사과나무의 엽면병 분류
 
 ## 모델 설명
-[REMAD ME MODEL!](https://github.com/luxetverit/miniproject4/blob/main/README_model.md)
+[REMAD ME MODEL](https://github.com/luxetverit/miniproject4/blob/main/README_model.md)
 
 ## 서비스
 free to use
