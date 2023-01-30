@@ -22,7 +22,7 @@ The dataset is available at [Kaggle](https://www.kaggle.com/competitions/plant-p
 ## 서비스
 free to use
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://luxetverit-miniproject4-1--main-yvubrb.streamlit.app/)
 
 ## 시연 영상
 수동 (직접 시연)
