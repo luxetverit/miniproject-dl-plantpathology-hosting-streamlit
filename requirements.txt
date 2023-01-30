@@ -2,5 +2,6 @@ pandas
 streamlit
 matplotlib
 torch
+opencv-python
 opencv-python-headless
 torchvision
