@@ -5,8 +5,11 @@ from PIL import Image
 import torch
 from torchvision import transforms
 import cv2
+
+
+
 def main():
-    st.set_page_config(page_title="잎사귀 질병 분류 웹앱", page_icon=":경비병:", layout="wide")
+    st.set_page_config(page_title="잎사귀 질병 분류 웹앱", page_icon=":경비병:", layout="centered")
     st.sidebar.title("메뉴")
     menu = ["메인 화면", "웹캠 사용", "이미지 업로드"]
     app_mode = st.sidebar.selectbox("메뉴를 선택하세요", menu)
