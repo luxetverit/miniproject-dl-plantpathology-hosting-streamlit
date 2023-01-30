@@ -22,7 +22,7 @@ The dataset is available at [Kaggle](https://www.kaggle.com/competitions/plant-p
 ## 서비스
 free to use
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://luxetverit-miniproject4-1--main-yvubrb.streamlit.app/)
 
 ## 시연 영상
 수동 (직접 시연)
@@ -40,8 +40,8 @@ free to use
  - 역할 : 화면 구성 및 캠 인식모듈 설정
  - Trouble Shooting
  - 의견 : 
-    기존에 학습된 모델을 이용해서 서비스를 개발하는 경험이 흥미로웠다. 
-    결과물을 만들어 내는 것에만 급급해 과정을 기록해 두지 못한 점이 아쉽다. 
+    기존에 학습된 모델을 이용해서 서비스를 개발하는 경험이 흥미로웠다.  
+    결과물을 만들어 내는 것에만 급급해 과정을 기록해 두지 못한 점이 아쉽다.   
     다음 프로젝트부터는 마주하는 문제들과 해결 과정을 따로 기록하며 프로젝트를 진행해야겠다.
      
 
