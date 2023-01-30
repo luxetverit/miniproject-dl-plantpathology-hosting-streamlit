@@ -52,5 +52,5 @@ with tab2:
         st.write(cv2_img.shape)
 
 st.sidebar.markdown("# :green[**Click app or picture!**]")
-button = st.sidebar.button("app", on_click=st.tabs["app"])
+button = st.sidebar.button("app")
 button2 =st.sidebar.button("picture")
