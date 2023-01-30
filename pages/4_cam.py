@@ -1,7 +1,5 @@
-
 import streamlit as st
 import cv2
-from io import BytesIO
 import numpy as np
 from PIL import Image
 import torch

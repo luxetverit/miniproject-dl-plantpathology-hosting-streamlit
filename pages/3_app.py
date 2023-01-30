@@ -1,12 +1,9 @@
 import streamlit as st
-import cv2
 from io import BytesIO
 import numpy as np
 from PIL import Image
 import torch
 from torchvision import transforms
-import base64
-import time
 
 # 이미지 업로드 -> 바이너리 데이터 전환 = byte 단위로 읽는다는 의미 -> 사이즈 조절 & ToTensor & 정규화 -> 모델에 투입
 
