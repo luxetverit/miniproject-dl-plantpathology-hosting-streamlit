@@ -1,6 +1,8 @@
 # Plant Pathology
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
 
+![appletree](./img/apple-tree-g4dc5161e2_1280.jpg)
+
 ## Description
 사과나무의 병리학적 특성을 구분하는 웹 앱
 
