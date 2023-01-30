@@ -1,4 +1,3 @@
-
 import streamlit as st
 import cv2
 from io import BytesIO
@@ -14,7 +13,6 @@ from tqdm import tqdm
 #visualisation
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-
 
 st.set_page_config(layout="wide")
 
